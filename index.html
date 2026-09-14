@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G3X Technologies — Build. Secure. Scale. Grow.</title>
+  <meta name="description" content="G3X Technologies is a digital product engineering company helping businesses build, secure and scale digital products across software, AI, cloud, data and cybersecurity.">
+  
+  <!-- High-Impact Precision Industrial Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gravity-theme">
+
+  <!-- TOP INDUSTRIAL NAVBAR (Exact match to reference style: Crisp white bar, uppercase nav, coral-red split CTA) -->
+  <header class="precision-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- Brand Logo (Angular Industrial Mark) -->
+      <a href="#" class="industrial-logo" aria-label="G3X Technologies">
+        <div class="logo-geometric-mark">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+            <polygon points="4,4 28,4 16,28" fill="#0C0E12"/>
+            <polygon points="10,8 22,8 16,20" fill="#FF3B30"/>
+          </svg>
+        </div>
+        <div class="logo-typography">
+          <span class="logo-main">G3X</span>
+          <span class="logo-sub">TECHNOLOGIES</span>
+        </div>
+      </a>
+
+      <!-- Center Nav Links (Uppercase, Wide Tracking) -->
+      <nav class="center-nav" id="centerNav">
+        <ul class="nav-links-list">
+          <li><a href="#hero" class="nav-item-link active">HOME</a></li>
+          <li><a href="#services" class="nav-item-link">CAPABILITIES</a></li>
+          <li><a href="#solutions" class="nav-item-link">PROCESS</a></li>
+          <li><a href="#projects" class="nav-item-link">PROJECTS</a></li>
+          <li><a href="#internships" class="nav-item-link student-nav-pill">INTERNSHIPS</a></li>
+          <li><a href="#about" class="nav-item-link">WHY G3X</a></li>
+          <li><a href="#contact" class="nav-item-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Button: Signature Red Split Button [ START A PROJECT | + ] -->
+      <div class="header-right-actions">
+        <button class="gravity-btn-split" onclick="openProjectModal('Navbar')">
+          <span class="btn-text">START A PROJECT</span>
+          <span class="btn-icon-box">+</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION (Exact Reference Layout: Cinematic Dark Machining Visual + Massive White Uppercase Title + Coral Action Button) -->
+    <section class="gravity-hero" id="hero">
+      <div class="hero-backdrop-img">
+        <img src="assets/hero_machining.jpg" alt="Precision Engineering and High-Performance Digital Machining" class="backdrop-img">
+        <div class="hero-overlay-gradient"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <div class="hero-content-container">
+        <!-- Monospaced Specification Tag -->
+        <div class="hero-spec-tag">
+          <span class="tag-status-light"></span>
+          <span class="spec-label">HIGH-PRECISION DIGITAL &amp; AI ENGINEERING</span>
+        </div>
+
+        <!-- Massive Hero Title matching reference: ADVANCED COMPOSITES... -> BUILD. SECURE. SCALE. GROW. -->
+        <h1 class="hero-massive-title">
+          BUILD. SECURE.<br>
+          SCALE. GROW.
+        </h1>
+
+        <!-- Subtitle matching reference: "Precision manufacturing for demanding applications" -->
+        <div class="hero-bottom-group">
+          <div class="hero-text-side">
+            <p class="hero-primary-sub">
+              Precision software, AI and product engineering for demanding business applications.
+            </p>
+            <p class="hero-secondary-sub">
+              G3X Technologies helps businesses build modern digital products across software, AI, data, cloud and cybersecurity.
+            </p>
+
+            <!-- Plain English clarity chip for non-tech clients -->
+            <div class="hero-plain-chip">
+              <span class="plain-prefix">IN SIMPLE WORDS:</span>
+              <span>We build your websites, phone apps, and AI assistants — engineered to run fast and never crash.</span>
+            </div>
+          </div>
+
+          <!-- Signature Coral Action Button matching reference: [ SET A QUOTE + ] -->
+          <div class="hero-actions-side">
+            <button class="gravity-btn-primary" onclick="openProjectModal('Hero')">
+              <span class="btn-label">START A PROJECT</span>
+              <span class="btn-action-icon">+</span>
+            </button>
+            <a href="#services" class="gravity-btn-secondary">
+              <span>EXPLORE SERVICES &rarr;</span>
+            </a>
+            
+            <!-- Secondary Student Link (Clearly Separated) -->
+            <div class="hero-internship-link">
+              <span class="intern-note">Looking for internships?</span>
+              <a href="#internships" class="intern-anchor">Explore G3X Opportunities &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Precision Metric Ticker Bar -->
+      <div class="hero-bottom-metrics">
+        <div class="metric-block">
+          <span class="m-val">99.9%</span>
+          <span class="m-label">PRODUCTION UPTIME SLA</span>
+        </div>
+        <div class="metric-block">
+          <span class="m-val">SOC 2 / ISO</span>
+          <span class="m-label">SECURITY-FIRST ARCHITECTURE</span>
+        </div>
+        <div class="metric-block">
+          <span class="m-val">8 CORE</span>
+          <span class="m-label">ENGINEERING CAPABILITIES</span>
+        </div>
+        <div class="metric-block">
+          <span class="m-val">100%</span>
+          <span class="m-label">CLEAN CODE REPOSITORY HANDOVER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BUSINESS SERVICES (70% Visual Core — Industrial Clean Cards with Technical Numbering) -->
+    <section class="precision-services section-gap" id="services">
+      <div class="section-container">
+        <div class="precision-section-header">
+          <div class="industrial-pill">[ 01 // CAPABILITIES ]</div>
+          <h2 class="industrial-heading">END-TO-END TECHNOLOGY ENGINEERING</h2>
+          <p class="industrial-sub">
+            Engineered for founders, CTOs, and enterprises who demand flawless execution. Simple to understand, enterprise-grade under the hood.
+          </p>
+        </div>
+
+        <!-- 8 Core Services in Industrial Grid -->
+        <div class="capabilities-grid">
+          <!-- 01 Web Development -->
+          <div class="capability-card" data-service="web">
+            <div class="cap-header">
+              <span class="cap-index">01</span>
+              <span class="cap-tag">FULL PERFORMANCE</span>
+            </div>
+            <h3 class="cap-title">Web Development</h3>
+            <p class="cap-desc">
+              High-speed web platforms, enterprise SaaS portals, and customer portals that load in milliseconds and convert traffic into revenue.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Fast, responsive, and works perfectly on all browsers &amp; screens.</span>
+            </div>
+            <div class="cap-stack">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Web Development')">DISCUSS WEB PROJECT &rarr;</button>
+          </div>
+
+          <!-- 02 Mobile Development -->
+          <div class="capability-card" data-service="mobile">
+            <div class="cap-header">
+              <span class="cap-index">02</span>
+              <span class="cap-tag">IOS &amp; ANDROID</span>
+            </div>
+            <h3 class="cap-title">Mobile Development</h3>
+            <p class="cap-desc">
+              Native and cross-platform mobile apps for iPhone and Android with silky-smooth 60fps animations, offline sync, and bank-grade data security.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Put your business in your customers' pockets with top App Store ratings.</span>
+            </div>
+            <div class="cap-stack">
+              <span>iOS</span>
+              <span>Android</span>
+              <span>React Native</span>
+              <span>Flutter</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Mobile Development')">DISCUSS MOBILE APP &rarr;</button>
+          </div>
+
+          <!-- 03 AI / Machine Learning -->
+          <div class="capability-card" data-service="aiml">
+            <div class="cap-header">
+              <span class="cap-index">03</span>
+              <span class="cap-tag">PREDICTIVE TECH</span>
+            </div>
+            <h3 class="cap-title">AI / Machine Learning</h3>
+            <p class="cap-desc">
+              Custom machine learning algorithms that analyze historical company data to forecast sales, identify trends, and automate repetitive tasks.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Make data-driven business decisions with automated accuracy.</span>
+            </div>
+            <div class="cap-stack">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>Scikit-Learn</span>
+              <span>MLOps</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('AI / ML')">DISCUSS AI PROJECT &rarr;</button>
+          </div>
+
+          <!-- 04 Generative AI -->
+          <div class="capability-card" data-service="genai">
+            <div class="cap-header">
+              <span class="cap-index">04</span>
+              <span class="cap-tag">SMART AUTOMATION</span>
+            </div>
+            <h3 class="cap-title">Generative AI &amp; RAG</h3>
+            <p class="cap-desc">
+              Private, custom-trained AI copilots and intelligent search systems (like your own private ChatGPT) trained specifically on your company's proprietary files.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Saves hundreds of manual work hours by answering queries instantly.</span>
+            </div>
+            <div class="cap-stack">
+              <span>LLMs</span>
+              <span>RAG</span>
+              <span>Vector DB</span>
+              <span>LangChain</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Generative AI')">DISCUSS GENAI &rarr;</button>
+          </div>
+
+          <!-- 05 Cybersecurity -->
+          <div class="capability-card" data-service="cyber">
+            <div class="cap-header">
+              <span class="cap-index">05</span>
+              <span class="cap-tag">ZERO-TRUST</span>
+            </div>
+            <h3 class="cap-title">Cybersecurity &amp; Audit</h3>
+            <p class="cap-desc">
+              Digital bank-vault fortification for your application. Penetration testing, vulnerability scanning, and SOC 2 / HIPAA compliance readiness.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Guarantees customer passwords, cards, and data are protected from leaks.</span>
+            </div>
+            <div class="cap-stack">
+              <span>Pen-Testing</span>
+              <span>OWASP Top 10</span>
+              <span>IAM</span>
+              <span>SOC 2</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Cybersecurity')">DISCUSS SECURITY &rarr;</button>
+          </div>
+
+          <!-- 06 Cloud & DevOps -->
+          <div class="capability-card" data-service="cloud">
+            <div class="cap-header">
+              <span class="cap-index">06</span>
+              <span class="cap-tag">HIGH AVAILABILITY</span>
+            </div>
+            <h3 class="cap-title">Cloud &amp; DevOps</h3>
+            <p class="cap-desc">
+              Cloud-native architecture on AWS, Google Cloud, or Azure with auto-scaling Kubernetes clusters and continuous CI/CD deployment pipelines.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Zero-downtime reliability even during sudden viral traffic surges.</span>
+            </div>
+            <div class="cap-stack">
+              <span>AWS</span>
+              <span>GCP</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Cloud & DevOps')">DISCUSS CLOUD SETUP &rarr;</button>
+          </div>
+
+          <!-- 07 Data Engineering -->
+          <div class="capability-card" data-service="data">
+            <div class="cap-header">
+              <span class="cap-index">07</span>
+              <span class="cap-tag">STREAMING PIPELINE</span>
+            </div>
+            <h3 class="cap-title">Data Engineering</h3>
+            <p class="cap-desc">
+              Organizing scattered databases and logs into clean lakehouses, real-time streaming pipelines, and live executive analytics dashboards.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Real-time visibility into company metrics without manual spreadsheet work.</span>
+            </div>
+            <div class="cap-stack">
+              <span>Kafka</span>
+              <span>Snowflake</span>
+              <span>PostgreSQL</span>
+              <span>dbt</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Data Engineering')">DISCUSS DATA SYSTEMS &rarr;</button>
+          </div>
+
+          <!-- 08 Product Engineering -->
+          <div class="capability-card" data-service="product">
+            <div class="cap-header">
+              <span class="cap-index">08</span>
+              <span class="cap-tag">FULL LIFECYCLE</span>
+            </div>
+            <h3 class="cap-title">Product Engineering</h3>
+            <p class="cap-desc">
+              Taking your raw product concept from Day 0 napkin sketch to a production-grade commercial software product ready for market launch.
+            </p>
+            <div class="cap-benefit">
+              <span class="b-dot">&#9679;</span>
+              <span>Launch your startup or enterprise tool faster with a dedicated tech team.</span>
+            </div>
+            <div class="cap-stack">
+              <span>Architecture</span>
+              <span>MVP Build</span>
+              <span>Roadmapping</span>
+              <span>Scale</span>
+            </div>
+            <button class="cap-btn" onclick="openProjectModal('Product Engineering')">DISCUSS ROADMAP &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Consultation Banner -->
+        <div class="industrial-callout-strip">
+          <div class="callout-content">
+            <h4>HAVE A SPECIFIC ENGINEERING REQUIREMENT?</h4>
+            <p>Our senior architects will evaluate your project scope and provide an architectural blueprint and fixed timeline.</p>
+          </div>
+          <button class="gravity-btn-primary" onclick="openProjectModal('Capabilities Callout')">
+            <span class="btn-label">DISCUSS YOUR PROJECT</span>
+            <span class="btn-action-icon">+</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BUSINESS PROBLEM TO SOLUTION (6-Step Lifecycle) -->
+    <section class="precision-process section-gap" id="solutions">
+      <div class="section-container">
+        <div class="precision-section-header">
+          <div class="industrial-pill">[ 02 // METHODOLOGY ]</div>
+          <h2 class="industrial-heading">FROM BUSINESS PROBLEM TO PRODUCTION-READY SOLUTION</h2>
+          <p class="industrial-sub">
+            Discover &rarr; Design &rarr; Build &rarr; Secure &rarr; Deploy &rarr; Scale. A disciplined 6-stage engineering lifecycle.
+          </p>
+        </div>
+
+        <!-- 6 Step Pipeline Control Bar -->
+        <div class="process-nav-bar" id="pipelineNav">
+          <button class="proc-step-btn active" data-step="0">
+            <span class="p-num">01</span>
+            <span class="p-name">DISCOVER</span>
+          </button>
+          <div class="proc-line"></div>
+          <button class="proc-step-btn" data-step="1">
+            <span class="p-num">02</span>
+            <span class="p-name">DESIGN</span>
+          </button>
+          <div class="proc-line"></div>
+          <button class="proc-step-btn" data-step="2">
+            <span class="p-num">03</span>
+            <span class="p-name">BUILD</span>
+          </button>
+          <div class="proc-line"></div>
+          <button class="proc-step-btn" data-step="3">
+            <span class="p-num">04</span>
+            <span class="p-name">SECURE</span>
+          </button>
+          <div class="proc-line"></div>
+          <button class="proc-step-btn" data-step="4">
+            <span class="p-num">05</span>
+            <span class="p-name">DEPLOY</span>
+          </button>
+          <div class="proc-line"></div>
+          <button class="proc-step-btn" data-step="5">
+            <span class="p-num">06</span>
+            <span class="p-name">SCALE</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Process Detail Box -->
+        <div class="process-display-box" id="pipelineCard">
+          <div class="process-left">
+            <div class="stage-tag" id="stepBadge">PHASE 01 // ARCHITECTURAL SCOPING</div>
+            <h3 class="stage-title" id="stepHeading">Discover &amp; Systems Alignment</h3>
+            <p class="stage-summary" id="stepDescription">
+              We audit your business constraints, technical requirements, data models, and goals to formulate a definitive engineering specification and ROI model.
+            </p>
+            <div class="stage-deliverables">
+              <div class="deliv-heading">KEY DELIVERABLES:</div>
+              <ul class="deliv-checklist" id="stepDeliverables">
+                <li>Technical Architecture Blueprint &amp; Data Contract Schema</li>
+                <li>Fixed Milestone Roadmap &amp; Budget Estimates</li>
+                <li>Risk Assessment &amp; Security Compliance Checklist</li>
+                <li>Dedicated Senior Tech Lead Assignment</li>
+              </ul>
+            </div>
+          </div>
+          <div class="process-right">
+            <div class="process-spec-panel">
+              <div class="panel-header">
+                <span class="panel-dot"></span>
+                <span class="panel-title" id="stepWindowLabel">PHASE 01 SPECIFICATION</span>
+              </div>
+              <div class="panel-body" id="stepWindowContent">
+                <div class="spec-verified-box">
+                  <div class="verified-icon">&#10003;</div>
+                  <h4>Scope &amp; Architecture Locked</h4>
+                  <p>100% transparent pricing and timeline before any coding begins.</p>
+                  <div class="meter-bar"><div class="meter-fill" style="width: 16%;"></div></div>
+                  <span class="meter-text">Phase 1 of 6 Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SELECTED PROJECTS (Credible Engineering Deployments) -->
+    <section class="precision-projects section-gap" id="projects">
+      <div class="section-container">
+        <div class="precision-section-header">
+          <div class="industrial-pill">[ 03 // PROVEN WORK ]</div>
+          <h2 class="industrial-heading">SELECTED ENGINEERING DEPLOYMENTS</h2>
+          <p class="industrial-sub">
+            Actual architectural challenges we solved. Real systems delivering measurable business impact every day.
+          </p>
+        </div>
+
+        <div class="deployments-grid">
+          <!-- Project 1 -->
+          <article class="deployment-card">
+            <div class="dep-header">
+              <span class="dep-domain">FINTECH &amp; PAYMENTS</span>
+              <span class="dep-status">PRODUCTION LIVE</span>
+            </div>
+            <h3 class="dep-title">High-Throughput Settlement &amp; Ledger System</h3>
+            <div class="dep-block">
+              <span class="dep-label">PROBLEM SOLVED:</span>
+              <p>Legacy payment system failed under traffic spikes (5,000 req/sec), causing deadlocks and reconciling discrepancies.</p>
+            </div>
+            <div class="dep-block">
+              <span class="dep-label">WHAT WAS BUILT:</span>
+              <p>Distributed event-driven ledger using immutable double-entry audit trails, Kafka partition streaming, and optimistic locking in PostgreSQL.</p>
+            </div>
+            <div class="dep-tags">
+              <span>Go</span>
+              <span>PostgreSQL</span>
+              <span>Apache Kafka</span>
+              <span>Docker</span>
+              <span>Redis</span>
+            </div>
+            <div class="dep-metrics">
+              <div class="dep-stat">
+                <span class="stat-num">&lt; 18ms</span>
+                <span class="stat-name">P99 Transaction Latency</span>
+              </div>
+              <div class="dep-stat">
+                <span class="stat-num">100%</span>
+                <span class="stat-name">Audit Consistency</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="deployment-card">
+            <div class="dep-header">
+              <span class="dep-domain">GENERATIVE AI &amp; LEGAL</span>
+              <span class="dep-status">ACTIVE ENTERPRISE</span>
+            </div>
+            <h3 class="dep-title">Enterprise Contract Intelligence &amp; RAG Core</h3>
+            <div class="dep-block">
+              <span class="dep-label">PROBLEM SOLVED:</span>
+              <p>Manual legal discovery across 250,000+ contracts required 600+ analyst hours per quarter with high human error risk.</p>
+            </div>
+            <div class="dep-block">
+              <span class="dep-label">WHAT WAS BUILT:</span>
+              <p>Multi-agent RAG workflow with semantic chunking, hybrid vector retrieval, and fine-tuned LLM citations with strict data isolation.</p>
+            </div>
+            <div class="dep-tags">
+              <span>Python</span>
+              <span>LangChain</span>
+              <span>Qdrant</span>
+              <span>FastAPI</span>
+              <span>Next.js</span>
+            </div>
+            <div class="dep-metrics">
+              <div class="dep-stat">
+                <span class="stat-num">84%</span>
+                <span class="stat-name">Review Time Saved</span>
+              </div>
+              <div class="dep-stat">
+                <span class="stat-num">98.2%</span>
+                <span class="stat-name">Citation Accuracy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="deployment-card">
+            <div class="dep-header">
+              <span class="dep-domain">HEALTHTECH</span>
+              <span class="dep-status">HIPAA CERTIFIED</span>
+            </div>
+            <h3 class="dep-title">HIPAA-Compliant Patient Telehealth Microservices</h3>
+            <div class="dep-block">
+              <span class="dep-label">PROBLEM SOLVED:</span>
+              <p>Medical network needed real-time patient video &amp; biometric telemetry with zero ePHI leakage risk across 50+ clinics.</p>
+            </div>
+            <div class="dep-block">
+              <span class="dep-label">WHAT WAS BUILT:</span>
+              <p>Zero-trust microservices on AWS EKS with KMS data encryption, mutual TLS authentication, and automated audit logging.</p>
+            </div>
+            <div class="dep-tags">
+              <span>AWS EKS</span>
+              <span>Terraform</span>
+              <span>Node.js / TS</span>
+              <span>Vault</span>
+              <span>Grafana</span>
+            </div>
+            <div class="dep-metrics">
+              <div class="dep-stat">
+                <span class="stat-num">Zero</span>
+                <span class="stat-name">Security Incidents</span>
+              </div>
+              <div class="dep-stat">
+                <span class="stat-num">99.99%</span>
+                <span class="stat-name">Verified System Uptime</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="deployment-card">
+            <div class="dep-header">
+              <span class="dep-domain">LOGISTICS &amp; IOT</span>
+              <span class="dep-status">PRODUCTION LIVE</span>
+            </div>
+            <h3 class="dep-title">Real-Time Fleet Telemetry &amp; Dynamic Dispatching</h3>
+            <div class="dep-block">
+              <span class="dep-label">PROBLEM SOLVED:</span>
+              <p>Commercial freight operator had 1,200 trucks facing delayed route recalculations, manual handoffs, and excessive fuel burn.</p>
+            </div>
+            <div class="dep-block">
+              <span class="dep-label">WHAT WAS BUILT:</span>
+              <p>Geospatial routing service using MQTT ingestion, WebSocket live maps, route optimization algorithms, and a driver mobile app.</p>
+            </div>
+            <div class="dep-tags">
+              <span>React Native</span>
+              <span>Rust Core</span>
+              <span>MQTT</span>
+              <span>PostGIS</span>
+              <span>GCP</span>
+            </div>
+            <div class="dep-metrics">
+              <div class="dep-stat">
+                <span class="stat-num">19.4%</span>
+                <span class="stat-name">Fuel Cost Reduced</span>
+              </div>
+              <div class="dep-stat">
+                <span class="stat-num">Real-Time</span>
+                <span class="stat-name">Sub-Second Sync</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY G3X (Business Trust & Engineering Discipline) -->
+    <section class="precision-why section-gap" id="about">
+      <div class="section-container">
+        <div class="precision-section-header">
+          <div class="industrial-pill">[ 04 // TRUST &amp; DISCIPLINE ]</div>
+          <h2 class="industrial-heading">ENGINEERED FOR RELIABILITY. BUILT FOR GROWTH.</h2>
+          <p class="industrial-sub">
+            We operate as your dedicated technical execution partner. No junior offloading, no fabricated promises, and no technical debt.
+          </p>
+        </div>
+
+        <div class="why-industrial-grid">
+          <div class="why-item">
+            <div class="why-number">01</div>
+            <h4>Engineering-First Approach</h4>
+            <p>Led by veteran software engineers who write clean, testable, and documentable code that your in-house team can easily inherit and maintain.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-number">02</div>
+            <h4>Modern Technology Stacks</h4>
+            <p>We eliminate obsolescence risks by choosing battle-tested, modern tools with active ecosystems, fast build times, and low operational friction.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-number">03</div>
+            <h4>Security-Conscious Development</h4>
+            <p>Security isn't a pre-launch patch. We integrate OWASP guidelines, static analysis, vulnerability scanning, and strict data privacy into every commit.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-number">04</div>
+            <h4>Scalable Architecture</h4>
+            <p>Systems designed from Day 1 to scale horizontally without architectural rewrites as your customer base expands from 1,000 to 1,000,000+ active users.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-number">05</div>
+            <h4>Transparent Communication</h4>
+            <p>Bi-weekly sprint demos, shared staging URLs, open GitHub pull requests, and direct communication channels with your designated technical lead.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-number">06</div>
+            <h4>Practical, ROI-Driven Solutions</h4>
+            <p>We don't over-engineer for the sake of complexity. We build software that maximizes your speed-to-market and yields verifiable return on capital.</p>
+          </div>
+        </div>
+
+        <div class="why-bottom-banner">
+          <div class="banner-info">
+            <h3>READY TO BUILD YOUR NEXT INITIATIVE?</h3>
+            <p>Consult directly with our engineering leadership to plan scope, architecture, and timeline.</p>
+          </div>
+          <button class="gravity-btn-primary" onclick="openProjectModal('Why G3X')">
+            <span class="btn-label">START A CONVERSATION</span>
+            <span class="btn-action-icon">+</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. STUDENT / INTERNSHIP SECTION (25% Weight — Practical Experience Ecosystem) -->
+    <section class="precision-internships section-gap" id="internships">
+      <div class="section-container">
+        <div class="precision-section-header">
+          <div class="industrial-pill accent-pill">[ 05 // TALENT ECOSYSTEM ]</div>
+          <h2 class="industrial-heading">BUILD YOUR EXPERIENCE WITH G3X.</h2>
+          <p class="industrial-sub">
+            Work on practical technology projects, collaborate with other developers and gain experience that goes beyond the classroom.
+          </p>
+
+          <!-- Required Clean Positioning: Not a coaching institute -->
+          <div class="student-positioning-box">
+            <strong>A practical technology experience powered by G3X Technologies.</strong><br>
+            Not a coaching center, training institute, or placement agency. You collaborate on production Git workflows, submit pull requests, get code reviews, and build verified portfolio deliverables.
+          </div>
+        </div>
+
+        <!-- 3 Ecosystem Pillars -->
+        <div class="student-pillars-grid">
+          <div class="pillar-box">
+            <div class="p-badge">WORKFLOW</div>
+            <h4>Git &amp; Real Code Reviews</h4>
+            <p>Work with branch strategies, semantic commits, PR reviews, and automated CI pipelines matching real industry standards.</p>
+          </div>
+
+          <div class="pillar-box">
+            <div class="p-badge">COLLABORATION</div>
+            <h4>Cross-Functional Collaboration</h4>
+            <p>Pair with fellow developers, participate in sprint syncs, and learn to communicate technical blockers clearly.</p>
+          </div>
+
+          <div class="pillar-box">
+            <div class="p-badge">PORTFOLIO</div>
+            <h4>Verified Portfolio Deliverables</h4>
+            <p>Graduate with live, deployed repositories and architectural writeups that prove your engineering capability to future employers.</p>
+          </div>
+        </div>
+
+        <!-- 7. 10 INTERNSHIP TRACKS -->
+        <div class="tracks-industrial-container">
+          <div class="tracks-intro">
+            <h3>SPECIALIZED PRACTICAL TRACKS</h3>
+            <p>Select any track to inspect practical expectations, prerequisites, and project scope:</p>
+          </div>
+
+          <!-- 10 Track Buttons -->
+          <div class="track-buttons-row" id="trackPillsBar">
+            <button class="track-btn active" data-track="web">Web Development</button>
+            <button class="track-btn" data-track="fullstack">Full Stack Development</button>
+            <button class="track-btn" data-track="python">Python</button>
+            <button class="track-btn" data-track="java">Java</button>
+            <button class="track-btn" data-track="aiml">AI / ML</button>
+            <button class="track-btn" data-track="genai">Generative AI</button>
+            <button class="track-btn" data-track="data">Data Engineering</button>
+            <button class="track-btn" data-track="cyber">Cybersecurity</button>
+            <button class="track-btn" data-track="cloud">Cloud / DevOps</button>
+            <button class="track-btn" data-track="mobile">Mobile Development</button>
+          </div>
+
+          <!-- Track Inspector Card -->
+          <div class="track-inspector" id="trackDetailCard">
+            <div class="inspector-details">
+              <div class="inspector-badge" id="trackTag">WEB DEV TRACK // PRODUCTION READY</div>
+              <h4 class="inspector-name" id="trackTitle">Modern Web Development Track</h4>
+              <p class="inspector-desc" id="trackDesc">
+                Focus on modern UI engineering, responsive state management, server-side rendering, and web performance optimization using industry toolchains.
+              </p>
+              <div class="inspector-specs">
+                <div class="spec-item">
+                  <span class="spec-k">Core Tooling:</span>
+                  <span class="spec-v" id="trackTooling">React 18+, TypeScript, Tailwind CSS, Vite, Next.js</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-k">Prerequisites:</span>
+                  <span class="spec-v" id="trackPrereq">Solid JavaScript fundamentals, basic Git knowledge, HTML/CSS proficiency</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-k">Practical Output:</span>
+                  <span class="spec-v" id="trackOutput">Production SaaS Dashboard with authentication, real API integration, and Lighthouse score > 90</span>
+                </div>
+              </div>
+            </div>
+            <div class="inspector-action-box">
+              <div class="action-card-inner">
+                <h4>APPLY FOR THIS TRACK</h4>
+                <p>Limited cohorts per quarter to preserve engineering mentorship and code review quality.</p>
+                <button class="gravity-btn-primary" onclick="openInternshipModal()">
+                  <span class="btn-label">APPLY NOW</span>
+                  <span class="btn-action-icon">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="internships-center-cta">
+          <button class="gravity-btn-secondary" onclick="openInternshipModal()">
+            <span>EXPLORE INTERNSHIPS &rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FINAL DUAL CTA (Serving Both Audiences) -->
+    <section class="precision-dual-cta section-gap" id="contact">
+      <div class="section-container">
+        <div class="dual-cards-wrapper">
+          <!-- Business Card (Primary Focus) -->
+          <div class="dual-card business-emphasis">
+            <div class="dual-badge-red">[ FOR BUSINESSES &amp; ORGANIZATIONS ]</div>
+            <h3 class="dual-title">HAVE A TECHNOLOGY PROJECT?</h3>
+            <p class="dual-sub">
+              Whether you are a funded startup building your MVP or an enterprise team upgrading legacy software, we provide high-velocity, secure engineering teams.
+            </p>
+            <ul class="dual-list">
+              <li>Detailed architecture proposal &amp; milestone roadmap</li>
+              <li>Dedicated senior tech lead &amp; transparent communication</li>
+              <li>Production SLA &amp; clean repository handover</li>
+            </ul>
+            <div class="dual-actions">
+              <button class="gravity-btn-primary" onclick="openProjectModal('Final Business CTA')">
+                <span class="btn-label">START A PROJECT</span>
+                <span class="btn-action-icon">+</span>
+              </button>
+              <button class="gravity-btn-secondary" onclick="openProjectModal('consultation')">
+                <span>TALK TO G3X</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Student Card (Secondary Focus) -->
+          <div class="dual-card student-emphasis">
+            <div class="dual-badge-blue">[ FOR STUDENTS &amp; GRADUATES ]</div>
+            <h3 class="dual-title">WANT PRACTICAL EXPERIENCE?</h3>
+            <p class="dual-sub">
+              Step away from theoretical exams. Build real software, submit actual pull requests, and gain verifiable proof of your technical competence.
+            </p>
+            <ul class="dual-list">
+              <li>10 specialized development tracks</li>
+              <li>Direct engineering feedback &amp; code reviews</li>
+              <li>Live portfolio project with working deployments</li>
+            </ul>
+            <div class="dual-actions">
+              <button class="gravity-btn-secondary" onclick="openInternshipModal()">
+                <span>EXPLORE INTERNSHIPS &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tertiary Strip: Partners & Future Talent -->
+        <div class="tertiary-industrial-bar">
+          <div class="t-text">
+            <strong>TECHNOLOGY PARTNERS, FREELANCE DEVELOPERS &amp; MENTORS:</strong> Interested in technical collaboration or joining our vetted network?
+          </div>
+          <button class="t-btn-link" onclick="openProjectModal('Partnership / Talent')">WORK WITH G3X &rarr;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer with Brand Statement -->
+  <footer class="precision-footer">
+    <div class="section-container">
+      <div class="footer-main-row">
+        <div class="footer-brand-side">
+          <div class="industrial-logo footer-logo">
+            <div class="logo-geometric-mark">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                <polygon points="4,4 28,4 16,28" fill="#0C0E12"/>
+                <polygon points="10,8 22,8 16,20" fill="#FF3B30"/>
+              </svg>
+            </div>
+            <div class="logo-typography">
+              <span class="logo-main">G3X</span>
+              <span class="logo-sub">TECHNOLOGIES</span>
+            </div>
+          </div>
+
+          <!-- Required Brand Statement -->
+          <p class="footer-positioning-copy">
+            G3X Technologies is a technology solutions and product engineering company helping businesses build, secure and scale digital products — while creating practical opportunities for students and fresh graduates to gain real-world technology experience.
+          </p>
+
+          <div class="footer-system-status">
+            <span class="status-green"></span>
+            <span>ENTERPRISE-READY SYSTEMS &bull; Q2/Q3 ENGINEERING OPEN</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div class="footer-column">
+            <h5>CAPABILITIES</h5>
+            <ul>
+              <li><a href="#services" onclick="filterService('web')">Web Development</a></li>
+              <li><a href="#services" onclick="filterService('mobile')">Mobile Applications</a></li>
+              <li><a href="#services" onclick="filterService('aiml')">AI &amp; Machine Learning</a></li>
+              <li><a href="#services" onclick="filterService('genai')">Generative AI &amp; RAG</a></li>
+              <li><a href="#services" onclick="filterService('cyber')">Cybersecurity &amp; Audit</a></li>
+              <li><a href="#services" onclick="filterService('cloud')">Cloud &amp; DevOps</a></li>
+              <li><a href="#services" onclick="filterService('data')">Data Engineering</a></li>
+              <li><a href="#services" onclick="filterService('product')">Product Engineering</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h5>PROCESS &amp; PROOF</h5>
+            <ul>
+              <li><a href="#solutions">6-Phase Lifecycle</a></li>
+              <li><a href="#projects">Selected Deployments</a></li>
+              <li><a href="#about">Why Choose G3X</a></li>
+              <li><a href="#contact" onclick="openProjectModal('Audit')">Architecture Audit</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h5>STUDENT TALENT</h5>
+            <ul>
+              <li><a href="#internships">Practical Model</a></li>
+              <li><a href="#internships" onclick="selectTrack('web')">Web &amp; Full Stack</a></li>
+              <li><a href="#internships" onclick="selectTrack('aiml')">AI &amp; Data Tracks</a></li>
+              <li><a href="#internships" onclick="selectTrack('cyber')">Cybersecurity Track</a></li>
+              <li><a href="#internships" onclick="openInternshipModal()">Apply for Cohort</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h5>CONNECT</h5>
+            <ul>
+              <li><a href="#about">About G3X</a></li>
+              <li><a href="#contact" onclick="openProjectModal('Partnership')">Partner With Us</a></li>
+              <li><span class="email-sublabel">DIRECT INQUIRIES:</span></li>
+              <li><a href="mailto:solutions@g3xtechnologies.com" class="direct-email-link">solutions@g3xtechnologies.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <div class="legal-copy">
+          &copy; <span id="currentYear">2026</span> G3X Technologies Inc. All rights reserved. Precision software engineering.
+        </div>
+        <div class="legal-anchors">
+          <a href="#">PRIVACY POLICY</a>
+          <span>&bull;</span>
+          <a href="#">TERMS OF ENGAGEMENT</a>
+          <span>&bull;</span>
+          <a href="#">SECURITY STANDARD</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE PERSISTENT STICKY BAR -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <button class="mobile-sticky-btn primary-sticky" onclick="openProjectModal('Mobile Sticky')">
+      <span>START A PROJECT</span>
+      <span class="sticky-plus">+</span>
+    </button>
+    <a href="#internships" class="mobile-sticky-btn secondary-sticky">
+      <span>INTERNSHIPS &rarr;</span>
+    </a>
+  </div>
+
+  <!-- MODAL 1: BUSINESS PROJECT INQUIRY -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('projectModal')" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-tag-red">[ G3X ENGINEERING INQUIRY ]</div>
+        <h3 id="modalProjectTitle">START YOUR TECHNOLOGY PROJECT</h3>
+        <p>Tell us about your requirements. Our solutions architects respond within 24 business hours with an architectural perspective.</p>
+      </div>
+
+      <form id="projectInquiryForm" class="modal-form" onsubmit="handleProjectSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientName">Your Name *</label>
+            <input type="text" id="clientName" required placeholder="e.g. Alex Morgan">
+          </div>
+          <div class="form-group">
+            <label for="clientEmail">Work Email *</label>
+            <input type="email" id="clientEmail" required placeholder="alex@company.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clientCompany">Company / Organization *</label>
+            <input type="text" id="clientCompany" required placeholder="Company or Startup Name">
+          </div>
+          <div class="form-group">
+            <label for="clientRole">Your Role</label>
+            <select id="clientRole">
+              <option value="Founder / CEO">Founder / CEO</option>
+              <option value="CTO / VP Engineering">CTO / VP Engineering</option>
+              <option value="Product Manager">Product Manager</option>
+              <option value="Enterprise IT Lead">Enterprise IT Lead</option>
+              <option value="Other">Other Executive</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Capabilities Needed (Select all that apply)</label>
+          <div class="checkbox-grid">
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Web Development"> Web Development</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Mobile Development"> Mobile Development</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="AI / ML"> AI / ML Systems</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Generative AI"> Generative AI / RAG</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Cybersecurity"> Cybersecurity &amp; Audit</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Cloud & DevOps"> Cloud &amp; DevOps</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Data Engineering"> Data Engineering</label>
+            <label class="check-item"><input type="checkbox" name="serviceReq" value="Product Engineering"> Full Product Engineering</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="projectTimeline">Target Timeline</label>
+            <select id="projectTimeline">
+              <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+              <option value="1 to 3 months">1 to 3 months</option>
+              <option value="3 to 6 months">3 to 6 months</option>
+              <option value="Long-term partnership">Dedicated Team Retainer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="estimatedBudget">Anticipated Budget Range</label>
+            <select id="estimatedBudget">
+              <option value="$10k - $25k">$10,000 – $25,000</option>
+              <option value="$25k - $50k">$25,000 – $50,000</option>
+              <option value="$50k - $100k+">$50,000 – $100,000+</option>
+              <option value="Enterprise Custom">Enterprise Custom</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="projectDetails">Project Overview &amp; Key Challenges *</label>
+          <textarea id="projectDetails" rows="3" required placeholder="Describe what you are building, existing architecture, or specific technical problems to solve..."></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <div class="nda-notice">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>All inquiries protected under mutual NDA.</span>
+          </div>
+          <button type="submit" class="gravity-btn-primary" id="submitProjectBtn">
+            <span class="btn-label">SUBMIT INQUIRY</span>
+            <span class="btn-action-icon">+</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="form-success-message" id="projectSuccessMessage" style="display: none;">
+        <div class="success-icon-box">&#10003;</div>
+        <h4>INQUIRY RECEIVED</h4>
+        <p>Thank you for contacting G3X Technologies. A senior solutions architect will review your scope and follow up within 24 business hours.</p>
+        <button class="gravity-btn-secondary" onclick="closeModal('projectModal')">CLOSE WINDOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: PRACTICAL INTERNSHIP APPLICATION -->
+  <div class="modal-overlay" id="internshipModal" role="dialog" aria-modal="true" aria-labelledby="modalInternTitle">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('internshipModal')" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-tag-red blue-tag">[ PRACTICAL TALENT ECOSYSTEM ]</div>
+        <h3 id="modalInternTitle">APPLY FOR PRACTICAL EXPERIENCE TRACK</h3>
+        <p>Gain real-world engineering exposure with production workflows, Git branching, and direct code reviews.</p>
+      </div>
+
+      <form id="internshipForm" class="modal-form" onsubmit="handleInternshipSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="studentName">Full Name *</label>
+            <input type="text" id="studentName" required placeholder="e.g. Jordan Lee">
+          </div>
+          <div class="form-group">
+            <label for="studentEmail">Email Address *</label>
+            <input type="email" id="studentEmail" required placeholder="jordan@university.edu">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="studentCollege">College / University / Status *</label>
+            <input type="text" id="studentCollege" required placeholder="Institute or University">
+          </div>
+          <div class="form-group">
+            <label for="studentGradYear">Graduation Year / Current Status *</label>
+            <select id="studentGradYear">
+              <option value="2027">Class of 2027</option>
+              <option value="2026">Class of 2026 (Final Year)</option>
+              <option value="2025">Class of 2025 (Recent Graduate)</option>
+              <option value="Entry-Level">Entry-Level Developer / Career Changer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="targetTrack">Preferred Practical Track *</label>
+          <select id="targetTrack" required>
+            <option value="Web Development">Web Development</option>
+            <option value="Full Stack Development">Full Stack Development</option>
+            <option value="Python">Python Engineering</option>
+            <option value="Java">Java Systems</option>
+            <option value="AI / ML">AI / Machine Learning</option>
+            <option value="Generative AI">Generative AI &amp; RAG</option>
+            <option value="Data Engineering">Data Engineering</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Cloud / DevOps">Cloud &amp; DevOps</option>
+            <option value="Mobile Development">Mobile Development</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="githubProfile">GitHub Profile URL *</label>
+            <input type="url" id="githubProfile" required placeholder="https://github.com/username">
+          </div>
+          <div class="form-group">
+            <label for="linkedinProfile">LinkedIn / Portfolio URL</label>
+            <input type="url" id="linkedinProfile" placeholder="https://linkedin.com/in/username">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="practicalGoal">What project do you want to build and what are you looking to master? *</label>
+          <textarea id="practicalGoal" rows="3" required placeholder="Describe your technical goals, languages you are familiar with, and what you aim to achieve..."></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <div class="nda-notice">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Applications evaluated based on curiosity and coding enthusiasm.</span>
+          </div>
+          <button type="submit" class="gravity-btn-primary" id="submitInternBtn">
+            <span class="btn-label">SUBMIT APPLICATION</span>
+            <span class="btn-action-icon">+</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="form-success-message" id="internSuccessMessage" style="display: none;">
+        <div class="success-icon-box">&#10003;</div>
+        <h4>APPLICATION SUBMITTED</h4>
+        <p>Your application has been logged into the G3X Talent Ecosystem. Profiles are reviewed on a rolling basis. You will receive an assessment prompt via email.</p>
+        <button class="gravity-btn-secondary" onclick="closeModal('internshipModal')">CLOSE WINDOW</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
